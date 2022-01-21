@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --facebook--:#3B5998;
+    --instagram--:#8A3AB9;
+    --twitter--:#1DA1F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 120px auto;
+    width: 320px;
+    height: 450px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 120px;
+    height: 120px;
+    border: 5px solid var(--instagram--);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0px auto;
+    transform: translateY(25px);
+    transition: 0.5s;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 55px;
+    cursor: pointer;
+}
+.card p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.card__social a {
+    color: #000;
+    font-size: 40px;
+    padding: 8px;
+}
+
+.card__social a i {
+    margin-top: 32px;
+    transition: 0.3s;
+}
+
+.card__social:hover .fb {
+    color: var(--facebook--);
+}
+.card__social:hover .insta {
+    color: var(--instagram--);
+}
+.card__social:hover .tw {
+    color: var(--twitter--);
+}
+.card__social:hover .micro {
+    color: #F35022;
+}
+
+.Contact {
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--instagram--);
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+.card button:hover {
+    background: var(--instagram--);
+}
+
+.card__img:hover {
+    border-radius: unset;
+    width: 100%;
+    height: 100%;
+    transform: unset;
+    border: none;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 400px) {
+    .crad {
+        display: flex;
+    }
+}
